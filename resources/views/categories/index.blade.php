@@ -40,4 +40,17 @@
                   @endif
             </div>
           </div>
+          <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+          <script type="text/javascript">
+                  $(document).ready(function(){
+                        $('.delete_form').on('submit',function(){
+                              if(confirm("คุณต้องการลบข้อมูลหรือไม่")){
+                                    return true;
+                              }else{
+                                    return false;
+                              }
+
+                        });
+                  });
+          </script>
 @endsection
